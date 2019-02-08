@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.carousel{
+	width:1000px;
+	height:350px;
+	padding:10px;
+	border:5px solid #ebebeb;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+  background: white;
+  display: block;
+    margin: auto;
+  align: center;
+}
+.image-slider-wrapper{
+	overflow: hidden;
+}
+#image_slider{
+	display: block;
+    margin: auto;
+	position: relative;
+	overflow: hidden;
+	height: 350px;
+	padding:0;
+	left:0;
+}
+#image_slider li{
+	position:relative;
+	max-width: 100%;
+	float:left;
+	list-style: none;
+	left: 0;
+	display: block;
+    margin: auto;
+}
+
+#wrapper{
+	width: 90%;
+	max-width: 1100px;
+	min-width: 300px;
+	margin: 50px auto;
+}
+
+#columns{
+	/* the column-count property easily splits the content of a div into 3 columns. it's not accepted by most browsers on its own, so it's a good idea to use this with all the appropriate prefixes */
+	-webkit-column-count: 3;
+	-webkit-column-gap: 0px;
+	-webkit-column-fill: auto;
+}
+
+
+.pin{
+	display: inline-block;
+	background: #FEFEFE;
+	border: 1px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom: 5px;
+	background: linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.pin img{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bttom: 15px;
+	margin-bottom: 5px;
+}
+
+.pin p{
+	font-size: 13px;
+	font-family: Helvetica, sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+#columns:hover .pin:not(:hover){
+	opacity: 0.4;
+	}
+
+@media (min-width: 960px){
+	#columns{
+		-webkit-column-count: 3;
+	}
+}
+
+@media (min-width: 1100px){
+	#columns{
+		-webkit-column-count: 3;
+	}
+}
+  ::-webkit-scrollbar-track
+{
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+ background-color: #F5F5F5;
+ border-radius: 5px;
+}
+::-webkit-scrollbar
+{
+ width: 10px;
+ background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+ background-color: #AAA;
+ border-radius: 10px;
+ background-image: -webkit-linear-gradient(90deg,
+                                           rgba(0, 0, 0, .2) 25%,
+             transparent 25%,
+             transparent 50%,
+             rgba(0, 0, 0, .2) 50%,
+             rgba(0, 0, 0, .2) 75%,
+             transparent 75%,
+             transparent)
+}
