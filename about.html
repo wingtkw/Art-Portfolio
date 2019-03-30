@@ -16,13 +16,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/script.js"></script>
  </HEAD>
-<HEAD>
-<TITLE>Wing's Design</TITLE>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<script src="js/script.js"></script>
- </HEAD>
 <div class="menu" id="main-nav">
     <nav id="nav">   
         <ul>
@@ -39,16 +32,16 @@
 <BODY bgcolor="#ffffff" text="#212632" link="#660066" vlink="#cc99cc" alink="#33ff99">
 	<br>
 	<div align="center">
-		<p style="font-family: Raleway; font-size: 35px; font-weight: 600;">About<br>
+		<p id="title" style="font-family: Raleway; font-size: 35px; font-weight: 600;">About<br>
 		<font style="font-family: Raleway; font-size: 20px; font-weight: 300;">Wing Tsui</font><p>
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
-	<img src="img/pro_pic.jpg" width=30%;><br><br>
+	<img src="img/pro_pic.jpg" id="pro_pic"><br><br>
 	<font style="font-family: Raleway; font-size: 15px; font-weight: 300;">A year 2 computer engineering student studying in HKUST</i></font><br><br>
 	<font style="font-family: Raleway; font-size: 20px; font-weight: 300;"><i>- 'Stay hungry, stay foolish' -</i></font><br>
 <font style="font-family: Raleway; font-size: 15px; font-weight: 300;">That is my motto.<br><br>
 If I ever asked people to describe me, some may describe me as a computer engineer. Some may think that I am a website administrator. Some may say that I am a designer.<p></p>
-For me, I perceive myself as a person who loves to dream and explore. I do not want myself to be defined by a few identities as they limit me what I can do.<br>
+For me, I perceive myself as a person who loves to dream and explore. I do not want myself to be defined by a few identities as they limit me what I can do.<p></p>
 Finding different possibilities in life is interesting, and I am willing to accept any challenges ahead.
 
 <p></font><br>
@@ -57,4 +50,17 @@ Finding different possibilities in life is interesting, and I am willing to acce
     </div>
 <br>
 </BODY>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+     $('.menu-toggle').click(function(){
+       $('nav').toggleClass('active');  
+     });
+    });
+</script>
 </HTML>
+

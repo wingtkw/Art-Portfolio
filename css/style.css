@@ -26,7 +26,7 @@ body{
 
 #home {
   width:100%;
-  height: 100vh;
+  height: 90vh;
   margin:0;
   display: flex;
   align-item:center;
@@ -104,7 +104,6 @@ body{
     font-size: 15px;
 }
 
-
 #main-nav nav ul li ul{
     display: none;
 }
@@ -116,6 +115,16 @@ body{
     font-size: 1em;
     cursor: pointer;
     display: none;
+}
+
+.page_title{
+    font-family: Raleway;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#pro_pic{
+    width: 30%;
 }
 
 @media (min-width: 1010px) and (max-width: 1305px){
@@ -135,11 +144,25 @@ body{
     margin: 5px 30px 0;
     align-content: center;
     }
+    
+    #pro_pic{
+        width: 40%;
+    }
+    
+    .page_title{
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+    .image_slider{
+        width: 80%;
+    }
 }
 
 @media (min-width: 475px) and (max-width: 1010px){
     #main-nav{
-        padding: 0 20px;
+        padding: 0px;
         height: 75px;
     }
     .menu-toggle{
@@ -148,7 +171,7 @@ body{
         margin: 0 auto;
         font-size: 30px;
         float: right;
-        padding: 25px 30px 0 30px;
+        padding: 25px 20px 0 80%;
     }
     #main-nav nav{
         position: absolute;
@@ -170,6 +193,9 @@ body{
     #main-nav nav ul{
         display: block;
         text-align: center;
+    }
+    #pro_pic{
+        width: 40%;
     }
 }
 
@@ -207,23 +233,29 @@ body{
         display: block;
         text-align: center;
     }
+    
+    #pro_pic{
+        width: 40%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 425px){
+    #home{
+        height: 85vh;
+    }
     #main-nav{
         padding: 0 20px;
         height: 75px;
-        width: 100%;
-        margin: 0;
-    }
-    .menu-toggle{
-        display: inline-flex;
-        margin: -40px 0px 0px 20px;
-        font-size: 30px;
-        float: right;
-        padding: 0 0 0 5px;
     }
     
+    .menu-toggle{
+        position: absolute;
+        display: inline-flex;
+        margin: 0 auto;
+        font-size: 30px;
+        float: right;
+        padding: 25px 30px 0 5px;
+    }
     #main-nav nav{
         position: absolute;
         width: 100%;
@@ -234,7 +266,6 @@ body{
         padding: 0;
         transition: 0.5s ease;
     }
-    
     #main-nav nav.active
     {
         left: 0;
@@ -245,6 +276,47 @@ body{
         display: block;
         text-align: center;
     }
+    
+  .title{
+      font-weight: 700;
+      color: transparent;
+      font-size:3em;
+      background: url("../img/bg.jpg") repeat;
+      background-position: 30% 50%;
+      -webkit-background-clip: text;
+      position:relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -100px;
+      display: block;
+      text-align: center;
+      line-height:25px;
+      letter-spacing: -8px;
+      text-transform:uppercase;
+      font-family: 'Montserrat', sans-serif;
+      animation: 1.5s ease-out 0s 1 fadeIn;
+    }
+    
+    .subtitle{
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      font-size: 2em;
+      color: #303030;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      line-height:5px;
+      text-transform:uppercase;
+      font-family: 'Raleway', sans-serif;
+      animation: 2.5s ease-out 0s 1 fadeIn;
+    }
+    
+    #pro_pic{
+        width: 60%;
+    }
+    
     
 }
 .button-down{
@@ -283,6 +355,7 @@ body{
 .image-slider-wrapper{
 	overflow: hidden;
 }
+
 #image_slider{
 	display: block;
     margin: auto;

@@ -71,3 +71,4 @@ window.onload = init;
     var x = document.lastModified;
     document.getElementById("lastupdate").innerHTML = x;
 	}
+   
